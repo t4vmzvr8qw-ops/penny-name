@@ -97,7 +97,7 @@ function openEntry(t=null){editing=t?.id||null;receiptData=t?.receipt||null;$('#
   setType(t?.type||'expense');if(t)$('#category').value=t.category;
   $('#smartInput').value='';$('#smartHint').textContent='';renderFavorites();
   $('#receiptPreview').replaceChildren();if(receiptData){const img=el('img');img.src=receiptData;$('#receiptPreview').append(img)}
-  updateSplit();$('#entryDialog').showModal();if(!t)setTimeout(()=>$('#amount').focus({preventScroll:true}),100)
+  updateSplit();$('#entryDialog').showModal();$('#entryDialog').scrollLeft=0;$('#entryForm').scrollLeft=0;$('#entryForm').scrollTop=0;if(!t)setTimeout(()=>$('#amount').focus({preventScroll:true}),100)
 }
 function repeatTransaction(t){if($('#entryDialog').open)$('#entryDialog').close();openEntry({...t,id:null,date:today(),receipt:null,note:''});editing=null;receiptData=null;$('#receiptPreview').replaceChildren();$('#deleteEntry').hidden=true;$('#repeatEntry').hidden=true;$('#entryTitle').textContent='Buchung wiederholen';$('#moreEntry').open=false;}
 function updateSplit(){const amount=parseAmount($('#amount').value),n=Number($('#split').value)||1;$('#splitHint').textContent=n>1&&amount?`Anteil pro Person: ${money(amount/n)} (gespeichert wird der Gesamtbetrag)` : ''}

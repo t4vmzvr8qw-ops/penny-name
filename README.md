@@ -72,3 +72,7 @@ In Einstellungen → Kategorien nach links wischen, um die rote Löschen-Schaltf
 - Schließen-X liegt weiter unten in der Kopfzeile und speichert Änderungen an bestehenden Buchungen automatisch.
 - Neue Buchungen werden beim Schließen gespeichert, wenn ein gültiger Betrag eingegeben wurde. Ein leerer neuer Entwurf wird verworfen. Ungültige Eingaben werden nicht stillschweigend gespeichert.
 - Offline-Cache auf v7 erhöht.
+
+
+## Version 1.7
+Der Transaktionseditor wird als volle Bildschirmansicht dargestellt, damit Safari keine seitlich verschiebbare Bottom-Sheet-Fläche erzeugt. Die Kopfzeile bleibt beim vertikalen Scrollen sichtbar; das Schließen-X hat eine 48×48-Pixel-Tippfläche unterhalb des iPhone-Sicherheitsabstands. Beim Schließen werden gültige Änderungen wie in Version 1.6 automatisch gespeichert. Vor dem Update ein Backup erstellen.
