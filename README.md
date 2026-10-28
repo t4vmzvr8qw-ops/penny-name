@@ -83,3 +83,8 @@ Der Transaktionseditor wird als volle Bildschirmansicht dargestellt, damit Safar
 - iOS Safari gibt dem nativen Monatsfeld eine Mindestbreite, die bei der bisherigen 2-Spalten-Anordnung über den Kartenrand ragte. Die mobile Ein-Spalten-Anordnung verhindert das.
 - Neue Offline-Cache-Version sorgt für das Ausrollen der CSS-Änderung.
 - Vor dem Update zur Sicherheit ein Backup unter „Mehr“ erstellen.
+
+
+## Version 1.9 – Wohnen im Kreisdiagramm
+
+Auf der Übersicht ist die Kategorie **Wohnen** im Ausgaben-Kreisdiagramm standardmäßig ausgeblendet. Mit dem Schalter „Wohnen im Diagramm anzeigen“ lässt sie sich jederzeit einblenden; das gilt auch für die Vollbildansicht. Die Auswahl wird lokal gespeichert. Diese Einstellung betrifft nur das Kreisdiagramm und dessen Gesamtwert: Saldo, Gesamtausgaben, Monatsprognose, Historie und Insights enthalten Wohnkosten weiterhin regulär.

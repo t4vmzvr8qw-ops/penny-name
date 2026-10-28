@@ -150,3 +150,9 @@ html:has(#entryDialog[open]),body:has(#entryDialog[open]){overflow:hidden!import
 #transactions .filterrow input[type=month]{-webkit-appearance:none;appearance:none;min-height:46px}
 #transactions .filters > input[type=search]{width:100%;min-width:0;max-width:100%;box-sizing:border-box}
 @media(min-width:540px){#transactions .filterrow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Penny 1.9: optionale Wohnkosten nur im Dashboard-Kreisdiagramm */
+.housing-switch{display:flex;align-items:center;gap:11px;margin:0 0 12px;padding:11px 13px;border:1px solid #315246;background:#102c26;border-radius:13px;color:#d0e9da;font-size:13px;cursor:pointer;min-width:0}
+.housing-switch input{appearance:auto;-webkit-appearance:checkbox;accent-color:#a5edc3;width:19px;height:19px;min-width:19px;flex:none;margin:0;padding:0}
+.housing-switch span{overflow-wrap:anywhere}
+.chart-dialog-content>.housing-switch{width:100%;margin-bottom:17px}
