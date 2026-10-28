@@ -76,3 +76,10 @@ In Einstellungen → Kategorien nach links wischen, um die rote Löschen-Schaltf
 
 ## Version 1.7
 Der Transaktionseditor wird als volle Bildschirmansicht dargestellt, damit Safari keine seitlich verschiebbare Bottom-Sheet-Fläche erzeugt. Die Kopfzeile bleibt beim vertikalen Scrollen sichtbar; das Schließen-X hat eine 48×48-Pixel-Tippfläche unterhalb des iPhone-Sicherheitsabstands. Beim Schließen werden gültige Änderungen wie in Version 1.6 automatisch gespeichert. Vor dem Update ein Backup erstellen.
+
+
+## Version 1.8 – Buchungsfilter auf iPhone
+- In „Buchungen“ stehen Buchungstyp und Monatsauswahl auf schmalen Displays untereinander.
+- iOS Safari gibt dem nativen Monatsfeld eine Mindestbreite, die bei der bisherigen 2-Spalten-Anordnung über den Kartenrand ragte. Die mobile Ein-Spalten-Anordnung verhindert das.
+- Neue Offline-Cache-Version sorgt für das Ausrollen der CSS-Änderung.
+- Vor dem Update zur Sicherheit ein Backup unter „Mehr“ erstellen.
