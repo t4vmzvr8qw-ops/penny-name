@@ -65,3 +65,10 @@ In Einstellungen → Kategorien nach links wischen, um die rote Löschen-Schaltf
 - Verhindert horizontales Verschieben der Seiten und Eingabedialoge auf iPhone.
 - Begrenzte Dialog- und Grid-Breiten; auch Datei- und Datumsfelder dürfen den Bildschirm nicht verbreitern.
 - Offline-Cache auf v6 erhöht, damit das CSS-Update zuverlässig neu geladen wird.
+
+
+## Version 1.6
+- Transaktionsdialog strikt auf iPhone-Bildschirmbreite beschränkt; keine seitliche Seitenverschiebung.
+- Schließen-X liegt weiter unten in der Kopfzeile und speichert Änderungen an bestehenden Buchungen automatisch.
+- Neue Buchungen werden beim Schließen gespeichert, wenn ein gültiger Betrag eingegeben wurde. Ein leerer neuer Entwurf wird verworfen. Ungültige Eingaben werden nicht stillschweigend gespeichert.
+- Offline-Cache auf v7 erhöht.
