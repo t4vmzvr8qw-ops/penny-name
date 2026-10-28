@@ -30,3 +30,11 @@ Die App verwendet IndexedDB im Browser für Buchungen, Kategorien, wiederkehrend
 ## Testhinweis
 
 Die JavaScript-Dateien wurden auf Syntax geprüft; ein vollständiger Test auf einem echten iPhone ist hier nicht möglich. Vor produktiver Verwendung mit Testbuchungen Import, Export und Offlinebetrieb prüfen.
+
+## Update 1.1
+- iOS: kein automatischer Zoom beim Fokussieren von Eingabefeldern; Pinch-Zoom in der Web-App deaktiviert.
+- Alle Kategorien (einschließlich Standardkategorien) lassen sich umbenennen, umfärben, mit Symbol versehen und löschen.
+- Beim Umbenennen werden vorhandene Buchungen und wiederkehrende Regeln aktualisiert.
+- Kategorien, die noch in Buchungen oder wiederkehrenden Regeln verwendet werden, müssen vor dem Löschen dort neu zugewiesen werden.
+- Nach dem Löschen aller Kategorien werden Standardkategorien nicht erneut angelegt.
+- Aktualisiere alle Dateien auf GitHub Pages; bestehende lokale Buchungen bleiben bei gleicher Website-Adresse erhalten.
