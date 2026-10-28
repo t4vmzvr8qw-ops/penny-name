@@ -156,3 +156,13 @@ html:has(#entryDialog[open]),body:has(#entryDialog[open]){overflow:hidden!import
 .housing-switch input{appearance:auto;-webkit-appearance:checkbox;accent-color:#a5edc3;width:19px;height:19px;min-width:19px;flex:none;margin:0;padding:0}
 .housing-switch span{overflow-wrap:anywhere}
 .chart-dialog-content>.housing-switch{width:100%;margin-bottom:17px}
+
+/* Penny 2.0: category filters and quick drill-down */
+#transactions .filter-category-label{display:grid;gap:8px;font-size:13px;color:#b8d1c3;min-width:0}
+#transactions .filter-category-label select{max-width:100%;min-width:0}
+.filter-options{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.filter-all-months{display:flex;align-items:center;gap:9px;color:#bdd8ca;font-size:12px;cursor:pointer}
+.filter-all-months input{width:18px;height:18px;flex:none;accent-color:#b1efc9}
+.filter-summary{font-size:12px;line-height:1.5;color:#b9dccc;padding:3px 4px 14px;overflow-wrap:anywhere}
+.category-drilldown{display:block;width:100%;margin:8px 0 15px;padding:13px 14px;border:1px solid #42725d;background:#173e32;color:#b4f3d0;border-radius:14px;text-align:center;font-size:13px;font-weight:650}
+.category-drilldown[hidden]{display:none!important}

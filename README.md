@@ -88,3 +88,19 @@ Der Transaktionseditor wird als volle Bildschirmansicht dargestellt, damit Safar
 ## Version 1.9 – Wohnen im Kreisdiagramm
 
 Auf der Übersicht ist die Kategorie **Wohnen** im Ausgaben-Kreisdiagramm standardmäßig ausgeblendet. Mit dem Schalter „Wohnen im Diagramm anzeigen“ lässt sie sich jederzeit einblenden; das gilt auch für die Vollbildansicht. Die Auswahl wird lokal gespeichert. Diese Einstellung betrifft nur das Kreisdiagramm und dessen Gesamtwert: Saldo, Gesamtausgaben, Monatsprognose, Historie und Insights enthalten Wohnkosten weiterhin regulär.
+
+
+## Penny 2.0 – Kategorien filtern
+
+Unter **Buchungen** kannst du nun nach einer Kategorie, Buchungstyp, Monat und Suchbegriff gleichzeitig filtern. Über **Alle Monate anzeigen** werden historische Ausgaben derselben Kategorie sichtbar. Die Summe der gefilterten Buchungen steht unmittelbar oberhalb der Treffer.
+
+Aus der Übersicht heraus eine Kategorie im Kreisdiagramm auswählen und auf **Ausgaben dieser Kategorie ansehen** tippen. Im Bereich **Insights** führt die entsprechende Schaltfläche aus der Kategorie-Historie zu den zugehörigen Buchungen über alle Monate.
+
+### Aktualisierung der installierten iPhone-PWA
+1. Bevor du Dateien austauschst, in Penny über **Mehr → Backup erstellen** eine Sicherung exportieren.
+2. Dateien des ZIP-Inhalts auf GitHub ins bestehende Repository-Hauptverzeichnis hochladen und vorhandene Dateien überschreiben.
+3. Auf GitHub unter **Actions** / **Settings → Pages** prüfen, ob die Bereitstellung erfolgreich war.
+4. Die GitHub-Pages-URL einmal in Safari normal öffnen und aktualisieren, dann die Home-Bildschirm-App vollständig schließen und erneut öffnen.
+5. Wenn noch die alte Version angezeigt wird: Safari auf `.../penny-app/?v=2.0` öffnen und ein zweites Mal neu laden. **Keine Website-Daten löschen**, da sonst lokale Finanzdaten verloren gehen können.
+
+Der Service Worker verwendet für die Hauptdateien nun **Network First**, damit veröffentlichte Updates bei bestehender Verbindung eher übernommen werden. Offline wird die gecachte Version benutzt.
