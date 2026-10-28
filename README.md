@@ -38,3 +38,25 @@ Die JavaScript-Dateien wurden auf Syntax geprüft; ein vollständiger Test auf e
 - Kategorien, die noch in Buchungen oder wiederkehrenden Regeln verwendet werden, müssen vor dem Löschen dort neu zugewiesen werden.
 - Nach dem Löschen aller Kategorien werden Standardkategorien nicht erneut angelegt.
 - Aktualisiere alle Dateien auf GitHub Pages; bestehende lokale Buchungen bleiben bei gleicher Website-Adresse erhalten.
+
+### Version 1.2
+In Einstellungen → Kategorien nach links wischen, um die rote Löschen-Schaltfläche einzublenden. Kategorien, die in Buchungen oder wiederkehrenden Regeln verwendet werden, können erst nach deren Neuzuordnung gelöscht werden.
+
+
+## Version 1.3 – Interaktive Diagramme
+- Übersicht: Alle Kategorien werden in der Legende vollständig (mehrzeilig) angezeigt. Tippe auf eine Kategorie, um ihren Anteil und Betrag im Kreisdiagramm hervorzuheben; ein zweites Tippen hebt die Auswahl auf.
+- Tippe auf Kreisdiagramm oder das Vergrößern-Symbol für die bildschirmfüllende Detailansicht mit vollständiger Kategorienliste.
+- Insights: Dropdown „Kategorie anzeigen“ zeigt sechs Monate Ausgaben für die ausgewählte Kategorie; „Alle Kategorien“ für den Gesamttrend.
+- Tippe auf das Balkendiagramm oder „Vergrößern“ für die bildschirmfüllende Ansicht mit Monatswerten und Kategorieauswahl.
+- Dieselbe GitHub-Pages-Adresse weiterverwenden, damit lokale Daten erhalten bleiben. Vor Updates Backup erstellen.
+
+
+## Version 1.4 – direkt nach dem Bezahlen erfassen
+- Das Plus öffnet die vereinfachte Eingabe: Betrag, optionaler Text und Kategorie; Datum ist heute.
+- „Schnelleingabe“ erkennt Eingaben wie `Rewe 24,50`, `Kaffee 3,50 gestern` und setzt Betrag, Beschreibung, Datum und vorgeschlagene Kategorie. Es wird kein Server kontaktiert.
+- Häufige Buchungen werden automatisch als Ein-Tipp-Favoriten angeboten (Betrag wie bei der letzten passenden Buchung). Tipp speichert **sofort** eine neue Buchung.
+- Buchung nach rechts wischen oder beim Bearbeiten „Wiederholen“ wählen: Werte übernehmen und mit heutigem Datum als neue Buchung speichern.
+- Selten benötigte Felder befinden sich unter „Weitere Optionen“.
+- Kategorien werden aus bisherigen Buchungen vorgeschlagen; keine erzwungene Standardkategorie.
+
+**Hinweis:** Favoriten sind absichtlich echte Ein-Tipp-Buchungen. Prüfe den Betrag, bevor du einen Favoriten verwendest. Wie bisher werden Buchungen nur lokal im Browser gespeichert; vor dem Aktualisieren empfiehlt sich ein Backup.
