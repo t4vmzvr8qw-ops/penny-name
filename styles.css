@@ -63,3 +63,24 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%}button,input,select
 .entry-more summary span{color:#7fae99;font-weight:400;font-size:11px}
 .entry-more-fields{display:grid;gap:14px;padding:16px 0 5px}
 #entryDialog .sheet{gap:13px}#entryDialog{max-height:97dvh}
+
+
+/* v1.5: prevent horizontal page and sheet displacement on iPhone. */
+html,body{width:100%;max-width:100%;overflow-x:clip;overscroll-behavior-x:none}
+#app,main,.page,.panel,.hero,.filters,.quick-area{min-width:0;max-width:100%}
+#app{width:100%;overflow-x:clip}
+.page{overflow-x:clip}
+.filterrow,.two,.hero-grid,.full-bar-values{grid-template-columns:repeat(2,minmax(0,1fr))}
+/* A modal must stay attached to the viewport, not grow to its contents. */
+dialog:not(.chart-dialog){box-sizing:border-box;position:fixed;inset:auto 0 0 0;width:100%;max-width:min(680px,100vw);min-width:0;max-height:calc(100dvh - env(safe-area-inset-top));margin:0 auto;overflow-x:clip;overflow-y:auto;overscroll-behavior-x:none}
+dialog .sheet{box-sizing:border-box;width:100%;max-width:100%;min-width:0;grid-template-columns:minmax(0,1fr);overflow-x:clip}
+dialog .sheet>* ,dialog .sheet label,dialog .sheet .two,dialog .sheet .toggle,dialog .sheet .sheetactions,dialog .quick-area>*{min-width:0;max-width:100%}
+dialog .sheet input,dialog .sheet select,dialog .sheet textarea{display:block;min-width:0;max-width:100%;width:100%}
+dialog .sheet input[type=file]{font-size:14px!important;overflow:hidden}
+.quick-favorites,.favorite-chips{min-width:0;max-width:100%}
+.favorite-chips{overscroll-behavior-x:contain}
+.sheetactions button{min-width:0}
+.sheethead h2{min-width:0;overflow-wrap:anywhere}
+.chart-dialog{position:fixed;inset:0;width:100%;max-width:100%;overflow-x:clip;overflow-y:auto}
+.chart-fullscreen,.chart-dialog-content{min-width:0;max-width:100%;overflow-x:clip}
+body:has(dialog[open]){overflow:hidden}

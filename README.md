@@ -60,3 +60,8 @@ In Einstellungen → Kategorien nach links wischen, um die rote Löschen-Schaltf
 - Kategorien werden aus bisherigen Buchungen vorgeschlagen; keine erzwungene Standardkategorie.
 
 **Hinweis:** Favoriten sind absichtlich echte Ein-Tipp-Buchungen. Prüfe den Betrag, bevor du einen Favoriten verwendest. Wie bisher werden Buchungen nur lokal im Browser gespeichert; vor dem Aktualisieren empfiehlt sich ein Backup.
+
+## Update 1.5
+- Verhindert horizontales Verschieben der Seiten und Eingabedialoge auf iPhone.
+- Begrenzte Dialog- und Grid-Breiten; auch Datei- und Datumsfelder dürfen den Bildschirm nicht verbreitern.
+- Offline-Cache auf v6 erhöht, damit das CSS-Update zuverlässig neu geladen wird.
